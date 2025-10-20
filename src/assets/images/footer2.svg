@@ -1,9 +1,0 @@
-<svg viewBox="0 0 1440 344" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="344" style="background:#F5F5F5">
-    <!-- back wave (слегка опущена) -->
-    <path d="M0,252 C160,215 320,180 480,188 C640,195 800,248 960,248 C1120,248 1280,200 1440,182 L1440,344 L0,344 Z"
-          fill="#555555" />
-    <!-- front wave -->
-    <path d="M0,230 C120,200 240,150 360,155 C480,160 600,215 720,215 C840,215 960,165 1080,120 C1200,75 1320,45 1440,30 L1440,344 L0,344 Z"
-          fill="#777777" fill-opacity="0.9"/>
-</svg>
-

@@ -1,9 +1,10 @@
-import {MenuStyled} from "./Menu.styled";
+import styled from "styled-components";
+import {FlexWrapper} from "../FlexWrapper.styled.tsx";
 
 export const Menu = () => {
     return (
         <MenuStyled>
-            <ul>
+            <FlexWrapper as ='ul' gap={'48px'}>
                 <li>
                     <a href="">About</a>
                 </li>
@@ -13,8 +14,18 @@ export const Menu = () => {
                 <li>
                     <a href="">Contacts</a>
                 </li>
-            </ul>
+            </FlexWrapper>
         </MenuStyled>
     );
 };
+
+const MenuStyled = styled.nav`
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    color: #25282b;
+    
+    
+    
+`
 

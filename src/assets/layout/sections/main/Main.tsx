@@ -3,20 +3,22 @@ import {FlexWrapper} from "../../../../components/FlexWrapper.styled.tsx";
 import {PhotoStyled} from "./Photo.styled";
 import styled from "styled-components";
 import {MainTextContainer} from "./mainTextContainer/MainTextContainer.tsx";
+import {Container} from "../../../../components/Conteiner.styled.tsx";
 
 export const Main = () => {
     return (
         <MainStyled>
-            <FlexWrapper align={'center'} justify={'space-around'}>
-                <MainTextContainer/>
-                <PhotoStyled src={photo} alt=""/>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper align={'center'} justify={'space-around'}>
+                    <MainTextContainer/>
+                    <PhotoStyled src={`${photo}`} alt=""/>
+                </FlexWrapper>
+            </Container>
         </MainStyled>
     );
 };
 
 const MainStyled = styled.section`
-    background-color: #F5F5F5;
 `
 
 

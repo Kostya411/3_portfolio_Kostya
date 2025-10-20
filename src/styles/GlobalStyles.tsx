@@ -15,9 +15,18 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     button {
-        //border: none;
-        //outline: none;
+        border: none;
+        outline: none;
         cursor: pointer;
+    }
+    
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style: none;
     }
 
     @media (prefers-reduced-motion: reduce) {
