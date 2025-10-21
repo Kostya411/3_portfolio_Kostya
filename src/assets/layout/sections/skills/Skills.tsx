@@ -1,15 +1,16 @@
 import {FlexWrapper} from "../../../../components/FlexWrapper.styled.tsx";
 import {Icon} from "../../../../components/icon/Icon";
-import {SectionTitle} from "../../../../components/SectionTitle.styled";
 import styled from "styled-components";
 import {Container} from "../../../../components/Conteiner.styled.tsx";
+import {SectionTitle} from "../../../../components/SectionTitle.tsx";
+
 
 
 export const Skills = () => {
     return (
         <SkillsStyled>
             <Container>
-                <SectionTitle>Skills</SectionTitle>
+                <SectionTitle text = {'Skills'}/>
                 <FlexWrapper align={'space-around'} wrap={'wrap'} gap={"50px"}>
                     <Icon iconId={'vsCode'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'JS'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
@@ -29,6 +30,5 @@ export const Skills = () => {
 };
 
 const SkillsStyled = styled.section`
-    background-color: #af9d9d;
 `
 

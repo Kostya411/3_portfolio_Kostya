@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
+        background-color: #F5F5F5;
     }
     
     button {

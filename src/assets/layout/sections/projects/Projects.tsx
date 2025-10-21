@@ -1,5 +1,5 @@
 import {FlexWrapper} from '../../../../components/FlexWrapper.styled.tsx';
-import {SectionTitle} from "../../../../components/SectionTitle.styled";
+import {SectionTitle} from "../../../../components/Title.styled.tsx";
 import {ProjectCard} from "./projectCard/ProjectCard";
 import photo from "../../../images/project_1.webp"
 import photo1 from "../../../images/project_2.webp"
@@ -12,7 +12,7 @@ export const Projects = () => {
     return (
         <ProjectsStyled>
             <Container>
-                <SectionTitle>Projects</SectionTitle>
+                {/*<SectionTitle>Projects</SectionTitle>*/}
                 <FlexWrapper direction={'column'} align={'center'} gap={'20px'}>
                     <ProjectCard id={"1"} projectName={'Name1'} projectText={'Lorem Ipsum 1'} position={false}
                                  photo={photo} projectLink={"#"}/>
@@ -27,7 +27,7 @@ export const Projects = () => {
 };
 
 const ProjectsStyled = styled.div`
-    background-color: #988d8d;`
+`
 
 
 
