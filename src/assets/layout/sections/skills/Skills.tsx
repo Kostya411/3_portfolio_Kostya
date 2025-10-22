@@ -2,7 +2,8 @@ import {FlexWrapper} from "../../../../components/FlexWrapper.styled.tsx";
 import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
 import {Container} from "../../../../components/Conteiner.styled.tsx";
-import {SectionTitle} from "../../../../components/SectionTitle.tsx";
+import {TitleSection} from "../../../../components/TitleSection.styled.tsx";
+
 
 
 
@@ -10,8 +11,8 @@ export const Skills = () => {
     return (
         <SkillsStyled>
             <Container>
-                <SectionTitle text = {'Skills'}/>
-                <FlexWrapper align={'space-around'} wrap={'wrap'} gap={"50px"}>
+                <TitleSection>Skills</TitleSection>
+                <FlexWrapper wrap = {'wrap'} justify={'space-around'} align={'center'} content={'space-around'} gap={'94px'}>
                     <Icon iconId={'vsCode'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'JS'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'CSS'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
@@ -20,6 +21,7 @@ export const Skills = () => {
                     <Icon iconId={'vector-_-'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'gitHub'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'git'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
+                    <Icon iconId={'react'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'sass'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'bootstrap'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'tailwind'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
