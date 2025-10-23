@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <FooterStyled>
             <Container>
-                <Copyright>Madelyn Torff 2021 </Copyright>
+                <Copyright>Madelyn Torff 202123 </Copyright>
             </Container>
         </FooterStyled>
     )
