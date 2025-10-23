@@ -1,30 +1,31 @@
 import styled from "styled-components";
-import {Input} from "./Input.styled.tsx";
-import {SectionTitle} from "../../../../components/Title.styled.tsx";
+import {Input} from "./Input.tsx";
 import {Button} from "../../../../components/Button.styled.tsx";
 import {FlexWrapper} from "../../../../components/FlexWrapper.styled.tsx";
 import {Container} from "../../../../components/Conteiner.styled.tsx";
+import {TitleSection} from "../../../../components/TitleSection.styled.tsx";
+import {Icon} from "../../../../components/icon/Icon.tsx";
 
 export const Contact = () => {
     return (
         <ContactStyled>
             <Container>
-                {/*<SectionTitle>Contact</SectionTitle>*/}
-                <StyledForm>
-                    <FlexWrapper direction={'column'} align={'center'}>
-                        <Input/>
-                        <Input/>
-                        <Input />
+                <TitleSection>Contact me</TitleSection>
+                    <FlexWrapper as = 'form' direction={'column'} align={'center'}>
+                        <Input name={'Name'} type={'text'} id={'name'}/>
+                        <Input name={'Email'} type={'mail'} id={'email'}/>
+                        <Input name={'Message'} type={'textarea'} id={'message'}/>
                         <Button type="submit">Submit</Button>
+                        <FlexWrapper justify="center">
+                            <Icon iconId={"instagram"}/>
+                            <Icon iconId={"linkedIn"}/>
+                            <Icon iconId={"mail"}/>
+                        </FlexWrapper>
                     </FlexWrapper>
-                </StyledForm>
             </Container>
         </ContactStyled>
     )
         ;
 };
 const ContactStyled = styled.section`
-`
-const StyledForm = styled.form`
-    border: 1px solid blue;
 `

@@ -1,6 +1,6 @@
 import {FlexWrapper} from '../../../../components/FlexWrapper.styled.tsx';
 import {ProjectCard} from "./projectCard/ProjectCard";
-import photo from "../../../images/asdasdasd.png"
+import photo from "../../../images/project_1.webp"
 import photo1 from "../../../images/project_2.webp"
 import photo2 from "../../../images/project_3.webp"
 import styled from "styled-components";
@@ -14,7 +14,7 @@ export const Projects = () => {
             <Container>
                 <TitleSection>Projects</TitleSection>
                 <FlexWrapper direction={'column'} align={'center'} gap={'80px'} padding={'80px 0 144px 0'} as = "ul">
-                    <ProjectCard id={"1"} projectName={'Project Name1'} projectText={'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.'}
+                    <ProjectCard id={"1"} projectName={'Project Name'} projectText={'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.'}
                                  photo={`${photo}`} projectLink={"#"}/>
                     <ProjectCard id={"2"} projectName={'Project Name'} projectText={'What was your role, your deliverables, if the project was personal, freelancing.'}
                                  photo={`${photo1}`} projectLink={"#"}/>
