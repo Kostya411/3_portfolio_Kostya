@@ -13,7 +13,7 @@ type CardSectionPropsType = {
 export const CardSection = (props: CardSectionPropsType) => {
     return (
         <CardSectionStyled>
-            <FlexWrapper direction={"column"} gap={'24px'}>
+            <FlexWrapper direction={"column"} gap={'24px'} align={'flex-start'}>
                 <CardTitle>
                     {props.projectName}
                 </CardTitle>
@@ -31,7 +31,10 @@ export const CardSection = (props: CardSectionPropsType) => {
 const CardSectionStyled = styled.div`
     max-width: 496px;
     max-height: 524px;
-    padding: 40px;
+    padding: 40px 40px 40px 50px ;
+    
+    
+    
 `
 
 
