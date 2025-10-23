@@ -4,8 +4,8 @@ export const Button = styled.button`
     border: 2px solid #25282b;
     border-radius: 8px;
     padding: 8px 24px;
-    width: 117px;
-    height: 43px;
+    vertical-align: center;
+    width: fit-content;
 
     font-weight: 500;
     font-size: 18px;

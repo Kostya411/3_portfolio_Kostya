@@ -16,7 +16,7 @@ type ProjectCardPropsType = {
 export const ProjectCard = (props: ProjectCardPropsType) => {
     return (
         <ProjectCardStyled>
-            <FlexWrapper direction={'row'} align={'center'}>
+            <FlexWrapper /*direction={'row'}*/ align={'center'}>
                 <CardSection projectName={props.projectName} projectText={props.projectText} projectLink={props.projectLink}/>
                 <CardPhoto src={props.photo}/>
             </FlexWrapper>
@@ -25,7 +25,7 @@ export const ProjectCard = (props: ProjectCardPropsType) => {
     );
 };
 
-const ProjectCardStyled = styled.div`
+const ProjectCardStyled = styled.li`
     background: #fff;
     padding-left: 10px;
 `
