@@ -9,7 +9,7 @@ export const Main = () => {
     return (
         <MainStyled>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-around'}>
+                <FlexWrapper align={'center'} justify={'space-around'} padding={'0 0 144px 0'}>
                     <MainTextContainer/>
                     <PhotoStyled src={`${photo}`} alt=""/>
                 </FlexWrapper>

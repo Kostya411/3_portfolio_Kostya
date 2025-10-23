@@ -26,8 +26,8 @@ export const ProjectCard = (props: ProjectCardPropsType) => {
 };
 
 const ProjectCardStyled = styled.div`
-background-color: brown;
-    padding: 10px;
+    background: #fff;
+    padding-left: 10px;
 `
 
 

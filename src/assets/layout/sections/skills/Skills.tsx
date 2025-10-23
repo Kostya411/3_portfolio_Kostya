@@ -12,7 +12,7 @@ export const Skills = () => {
         <SkillsStyled>
             <Container>
                 <TitleSection>Skills</TitleSection>
-                <FlexWrapper wrap = {'wrap'} justify={'space-around'} align={'center'} content={'space-around'} gap={'94px'}>
+                <FlexWrapper wrap = {'wrap'} justify={'space-around'} align={'center'} content={'space-around'} gap={'94px'} padding={'74px 0 144px 0'}>
                     <Icon iconId={'vsCode'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'JS'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'CSS'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
