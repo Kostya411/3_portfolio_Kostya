@@ -7,7 +7,7 @@ type InputPropsType = {
 export const Input = (props: InputPropsType) => {
     return (
         <label for={props.id}>
-            {props.name}
+            {props.name};l
             <input type={props.type} id={props.id}/>
         </label>
     )
