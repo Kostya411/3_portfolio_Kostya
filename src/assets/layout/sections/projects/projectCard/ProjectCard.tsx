@@ -1,6 +1,5 @@
 import {CardPhoto} from "./CardPhoto.styled";
 import {CardSection} from "./cardSection/CardSection";
-import {FlexWrapper} from "../../../../../components/FlexWrapper.styled.tsx";
 import styled from "styled-components";
 
 type ProjectCardPropsType = {

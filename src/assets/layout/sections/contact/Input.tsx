@@ -1,14 +1,27 @@
+import styled from "styled-components";
+
 type InputPropsType = {
-    name: 'string'
-    type: 'string'
-    id: 'string'
+    name: string,
+    type: string,
+    id: string,
+    width: string,
+    height: string,
+
 }
 
-export const Input = (props: InputPropsType) => {
+export const InputSet = (props: InputPropsType) => {
     return (
-        <label for={props.id}>
-            {props.name};l
-            <input type={props.type} id={props.id}/>
-        </label>
+        <>
+            <Label for={props.id} width={props.width}> </Label>
+            <Input type={props.type} id={props.id}/>
+        </>
     )
-}
+    }
+
+    const Label = styled.label<InputPropsType>`
+        width: ${props => props.width};
+        height: ${props => props.height};
+
+    `
+
+
