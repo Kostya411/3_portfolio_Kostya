@@ -24,6 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     a {
         text-decoration: none;
         cursor: pointer;
+        line-height: 0;
     }
 
     ul {
