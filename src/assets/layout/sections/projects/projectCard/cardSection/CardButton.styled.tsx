@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import {thema} from "../../../../../../styles/Thema.tsx";
 
-export const CardWiew = styled.a`
-    border: 1px solid #25282b;
+export const CardView = styled.a`
+    border: 1px solid ${thema.color.grey.second};
     border-radius: 24px;
    
     padding: 8px 24px;
@@ -13,11 +14,11 @@ export const CardWiew = styled.a`
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    color: #25282b;
+    color: ${thema.color.grey.second};
     
 
     &:hover {
-        background-color: #fdc435;
+        background-color: ${thema.color.primary};
         border: 1px solid transparent;
     }
 `

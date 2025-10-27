@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../FlexWrapper.styled.tsx";
+import {thema} from "../../styles/Thema.tsx";
 
 export const Menu = () => {
     return (
@@ -20,11 +21,18 @@ export const Menu = () => {
 };
 
 const MenuStyled = styled.nav`
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 156%;
-    color: #25282b;
+   
+    & a{
+        font-family: "Comfortaa", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 156%;
+        color: ${thema.color.grey.second}   
+    }
+    
+    @media ${thema.media.tablet} {
+        display: none;
+    };
     
     
     

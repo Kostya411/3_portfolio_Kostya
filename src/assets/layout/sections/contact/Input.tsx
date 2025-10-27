@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {thema} from "../../../../styles/Thema.tsx";
 
 type InputPropsType = {
     name?: string,
@@ -21,7 +22,7 @@ export const InputSet = (props: InputPropsType) => {
 const Label = styled.label<InputPropsType>`
     font-weight: 600;
     font-size: 16px;
-    color: #25282b;
+    color: ${thema.color.grey.second};
     width: 100%;
     text-align: left;
     span {
@@ -33,9 +34,9 @@ const Input = styled.input<InputPropsType>`
     width: 100%;
     height: ${(props)=> props.height || `10px`};
     margin-top: 8px;
-    border: 1px solid #e8ecf4;
+    border: 1px solid ${thema.color.light.second};
     border-radius: 8px;
-    background: #fff;
+    background: ${thema.color.light.first};
 `
 
 

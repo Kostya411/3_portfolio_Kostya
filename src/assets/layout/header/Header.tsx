@@ -18,7 +18,7 @@ export const Header = () => {
 };
 
 const HeaderStyled = styled.header`
-//    ______
+
 `
 
 

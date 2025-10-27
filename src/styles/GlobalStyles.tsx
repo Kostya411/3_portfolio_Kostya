@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {thema} from "./Thema.tsx";
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -12,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background-color: #F5F5F5;
+        background-color: ${thema.color.light.third};
     }
     
     button {

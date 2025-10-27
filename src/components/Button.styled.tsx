@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import {thema} from "../styles/Thema.tsx";
 
 export const Button = styled.button`
     font-family: "Roboto", sans-serif;
-    border: 2px solid #25282b;
+    border: 2px solid ${thema.color.grey.second};
     border-radius: 8px;
     padding: 8px 24px;
     vertical-align: center;
@@ -11,10 +12,10 @@ export const Button = styled.button`
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    color: #25282b;
+    color: ${thema.color.grey.second};
     
     &:hover {
-        background-color: #fdc435;
+        background-color: ${thema.color.primary};
         border: 2px solid transparent;
     }
 `

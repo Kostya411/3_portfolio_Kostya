@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {thema} from "../styles/Thema.tsx";
 
 export const TitleSection = styled.h2 `
     font-family: "Playfair Display", sans-serif;
@@ -6,7 +7,7 @@ export const TitleSection = styled.h2 `
     font-size: 48px;
     line-height: 150%;
     text-align: center;
-    color: #25282b;
+    color: ${thema.color.grey.second};
     
     &::after {
         content: '';
@@ -15,6 +16,6 @@ export const TitleSection = styled.h2 `
         border-radius: 2px;
         width: 100px;
         height: 4px;
-        background: #fdc435;
+        background: ${thema.color.primary};
     }
 `

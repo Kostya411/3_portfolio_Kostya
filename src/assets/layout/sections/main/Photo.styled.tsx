@@ -10,11 +10,6 @@ export const PhotoStyled = styled.img`
     mask-position: left bottom;
     background-image: url('/yellow-bg.svg');
     background-position: left bottom ;
-
     
-        
-    
-
-  
-    
+   
 `

@@ -1,7 +1,7 @@
 import {FlexWrapper} from "../../../../../../components/FlexWrapper.styled.tsx";
 import {CardTitle} from "./CardTitle.styled";
 import {CardText} from "./CardText.styled";
-import {CardWiew} from "./CardButton.styled";
+import {CardView} from "./CardButton.styled";
 import styled from "styled-components";
 
 type CardSectionPropsType = {
@@ -20,9 +20,9 @@ export const CardSection = (props: CardSectionPropsType) => {
                 <CardText>
                     {props.projectText}
                 </CardText>
-                <CardWiew href={props.projectLink}>
+                <CardView href={props.projectLink}>
                     View Project
-                </CardWiew>
+                </CardView>
             </FlexWrapper>
         </CardSectionStyled>
     );

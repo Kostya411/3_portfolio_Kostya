@@ -1,6 +1,7 @@
 import {CardPhoto} from "./CardPhoto.styled";
 import {CardSection} from "./cardSection/CardSection";
 import styled from "styled-components";
+import {thema} from "../../../../../styles/Thema.tsx";
 
 type ProjectCardPropsType = {
     id: string,
@@ -23,7 +24,7 @@ export const ProjectCard = (props: ProjectCardPropsType) => {
 };
 
 const ProjectCardStyled = styled.li`
-    background: #fff;
+    background: ${thema.color.light.first};
     overflow: hidden;
     box-shadow: 0 6px 64px 0 rgba(112, 144, 176, 0.1);
     border-radius: 24px;
