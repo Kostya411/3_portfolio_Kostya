@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TitleSection = styled.h2 `
-    
+    font-family: "Playfair Display", sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 150%;

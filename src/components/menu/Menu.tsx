@@ -20,6 +20,7 @@ export const Menu = () => {
 };
 
 const MenuStyled = styled.nav`
+    font-family: "Comfortaa", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 156%;

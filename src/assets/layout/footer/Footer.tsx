@@ -1,18 +1,14 @@
 import styled from "styled-components";
-import {Container} from "../../../components/Conteiner.styled.tsx";
 import footer from "../../images/footer.svg"
 import {FlexWrapper} from "../../../components/FlexWrapper.styled.tsx";
 
 export const Footer = () => {
     return (
         <FooterStyled>
-            <Container>
-                <FlexWrapper>
+                <FlexWrapper direction={"column"}>
                     <Copyright>Madelyn Torff 2021 </Copyright>
                     <FooterImg src={`${footer}`} alt="footer"/>
                 </FlexWrapper>
-
-            </Container>
         </FooterStyled>
     )
 }
@@ -22,6 +18,10 @@ const FooterStyled = styled.footer`
     padding-top: 32px;
 `
 const Copyright = styled.small`
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #828282;
 `
 const FooterImg = styled.img`
     `

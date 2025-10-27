@@ -8,7 +8,8 @@ export const CardWiew = styled.a`
     width: fit-content;
     vertical-align: center;
     text-align: center;
-    
+
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;

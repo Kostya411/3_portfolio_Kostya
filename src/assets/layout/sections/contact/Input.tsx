@@ -11,10 +11,10 @@ type InputPropsType = {
 
 export const InputSet = (props: InputPropsType) => {
     return (
-            <Label htmlFor={props.id} >
-                <span>{props.name}</span>
-                <Input type={props.type} id={props.id} height={props.height}/>
-            </Label>
+        <Label htmlFor={props.id} >
+            <span>{props.name}</span>
+            <Input type={props.type} id={props.id} height={props.height}/>
+        </Label>
     )
 }
 

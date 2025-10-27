@@ -5,13 +5,15 @@ import styled from "styled-components";
 import {MainTextContainer} from "./mainTextContainer/MainTextContainer.tsx";
 import {Container} from "../../../../components/Conteiner.styled.tsx";
 
+
+
 export const Main = () => {
     return (
         <MainStyled>
             <Container>
                 <FlexWrapper align={'center'} justify={'space-around'} padding={'0 0 144px 0'}>
                     <MainTextContainer/>
-                    <PhotoStyled src={`${photo}`} alt=""/>
+                        <PhotoStyled src={`${photo}`} alt="main photo"/>
                 </FlexWrapper>
             </Container>
         </MainStyled>
@@ -19,7 +21,9 @@ export const Main = () => {
 };
 
 const MainStyled = styled.section`
+   
 `
+
 
 
 
