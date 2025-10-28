@@ -7,4 +7,6 @@ export const TitleContainer = styled.span`
     font-size: 20px;
     text-transform: uppercase;
     color: ${thema.color.primary};
+    text-align: left;
+    
 `

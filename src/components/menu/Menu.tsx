@@ -32,6 +32,6 @@ const MenuStyled = styled.nav`
     
     @media ${thema.media.tablet} {
         display: none;
-    };
+    }
 `
 

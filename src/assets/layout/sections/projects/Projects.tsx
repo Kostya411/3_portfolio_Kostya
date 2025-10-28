@@ -6,6 +6,7 @@ import photo2 from "../../../images/project_3.webp"
 import styled from "styled-components";
 import {Container} from "../../../../components/Conteiner.styled.tsx";
 import {TitleSection} from "../../../../components/TitleSection.styled.tsx";
+import {thema} from "../../../../styles/Thema.tsx";
 
 
 export const Projects = () => {
@@ -30,12 +31,27 @@ const ProjectsStyled = styled.div`
     ul > li {
         &:nth-child(odd) {
             flex-direction: row;
+            @media ${thema.media.tablet} {
+                flex-direction: column-reverse;
+            }
         }
+
         &:nth-child(even) {
             flex-direction: row-reverse;
+            @media ${thema.media.tablet} {
+                flex-direction: column-reverse;
+            }
         }
+      
     }
+
     
+
+            
+               
+           
+
+
 `
 
 

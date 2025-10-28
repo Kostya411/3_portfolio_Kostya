@@ -30,7 +30,7 @@ export const CardSection = (props: CardSectionPropsType) => {
 
 const CardSectionStyled = styled.div`
     
-    max-width: 496px;
+    max-width: 50%;
     max-height: 524px;
     padding: 40px 40px 40px 50px ;
     

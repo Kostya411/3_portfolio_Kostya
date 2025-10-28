@@ -28,6 +28,9 @@ const ProjectCardStyled = styled.li`
     overflow: hidden;
     box-shadow: 0 6px 64px 0 rgba(112, 144, 176, 0.1);
     border-radius: 24px;
+    max-width: 992px;
+
+    
     
     
 

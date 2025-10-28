@@ -21,7 +21,8 @@ export const Header = () => {
 
 const HeaderStyled = styled.header`
     background: transparent;
-    z-index: 10;
+    
+    
 `
 
 

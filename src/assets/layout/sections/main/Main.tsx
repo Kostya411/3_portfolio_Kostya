@@ -10,13 +10,14 @@ export const Main = () => {
     return (
         <MainStyled>
             <Container>
-                <FlexWrapper direction={'row-reverse'} justify={'flex-end'}>
-                    <PhotoWrapper>
-                        <PhotoStyled src={`${photo}`} alt="main photo"/>
-                    </PhotoWrapper>
+                <FlexWrapper direction={'row-reverse'} justify={'space-between'} wrap={'wrap'} align={'center'}>
+                    {/*<PhotoWrapper>*/}
+                    {/*    <PhotoMask>*/}
+                    {/*        <PhotoStyled src={`${photo}`} alt="main photo"/>*/}
+                    {/*    </PhotoMask>*/}
+                    {/*</PhotoWrapper>*/}
                     <MainTextContainer/>
                 </FlexWrapper>
-
             </Container>
         </MainStyled>
     );
@@ -24,16 +25,33 @@ export const Main = () => {
 
 const MainStyled = styled.section`
     overflow: visible;
-    z-index: 9;
+    position: relative;
+    z-index: -1;
+    
 
+
+
+`
+
+const PhotoMask = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 777px;
+    height: 877px;
+    mask-image: url('/yellow-bg.svg');
+    mask-position: left bottom;
+    background-image: url('/yellow-bg.svg');
+    background-position: left bottom;
 `
 
 const PhotoWrapper = styled.div`
     position: relative;
-    width: 375px;
-    height: 200px;
-
-
+    width: 600px;
+    height: 420px;
+    bottom: 0;
+    left: 0;
+    align-items: center;
 `
 
 
