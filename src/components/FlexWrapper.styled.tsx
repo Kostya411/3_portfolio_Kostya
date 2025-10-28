@@ -17,5 +17,6 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     flex-wrap: ${props => props.wrap || 'nowrap'};
     gap: ${props => props.gap || '0'};
     padding: ${props => props.padding || '0 0'};
+    background: transparent;
    
 `

@@ -26,4 +26,5 @@ export const MainTextContainer = () => {
 
 const MainTextContainerStyled = styled.div`
     max-width: 508px;
+    
 `

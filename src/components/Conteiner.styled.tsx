@@ -8,7 +8,8 @@ export const Container = styled.div`
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: ${thema.color.light.third};
+    background: transparent;
+    // background-color: ${thema.color.light.third};
     border: 1px solid red;
     
     

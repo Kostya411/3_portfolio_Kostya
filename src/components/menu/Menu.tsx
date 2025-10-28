@@ -21,7 +21,7 @@ export const Menu = () => {
 };
 
 const MenuStyled = styled.nav`
-   
+    background: transparent;
     & a{
         font-family: "Comfortaa", sans-serif;
         font-weight: 500;
@@ -33,8 +33,5 @@ const MenuStyled = styled.nav`
     @media ${thema.media.tablet} {
         display: none;
     };
-    
-    
-    
 `
 

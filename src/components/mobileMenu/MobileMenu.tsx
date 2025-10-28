@@ -5,10 +5,10 @@ import {thema} from "../../styles/Thema.tsx";
 export const MobileMenu = () => {
     return (
         <MenuMobileStyled>
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
-            <MenuPopup isOpen={true}>
+            <MenuPopup isOpen={false}>
                 <FlexWrapper as='ul' gap={'48px'} direction={'column'}>
                     <li>
                         <a href="">About</a>
@@ -25,37 +25,45 @@ export const MobileMenu = () => {
     );
 };
 
-const MenuMobileStyled = styled.nav<{isOpen:boolean}>`
+const MenuMobileStyled = styled.nav`
     display: none;
-    ${props => props.isOpen && css <(isOpen: boolean)>`
-    `}
-    
+    @media ${thema.media.tablet} {
+        display: block;
+    };
 `
 
-const BurgerButton = styled.button`
+const BurgerButton = styled.button<{ isOpen: boolean }>`
     position: fixed;
-    width: 100px;
-    height: 100px;
-    right: -50px;
-    top: -50px;
+   
+    
+    z-index: 999;
+    background-color: ${thema.color.primary};
 
     span {
         display: block;
         width: 18px;
         height: 2px;
-        color: ${thema.color.grey.second}
+        background-color: ${thema.color.grey.second};
         position: absolute;
-        left: 30px;
-        bottom: 30px;
+        
+        
 
+        ${props => props.isOpen && css <{ isOpen: boolean }>`
+            background-color: rgba(255, 255, 255, 0);
+        `}
+        
         &::before {
             content: "";
             display: block;
             width: 18px;
             height: 2px;
-            color: ${thema.color.grey.second}
+            background-color: ${thema.color.grey.second};
             position: absolute;
             transform: translateY(-6px);
+            
+            ${props => props.isOpen && css <{ isOpen: boolean }>`
+             transform: rotate(-45deg) translateY(0);
+        `}
         }
 
         &::after {
@@ -63,22 +71,33 @@ const BurgerButton = styled.button`
             display: block;
             width: 18px;
             height: 2px;
-            color: ${thema.color.grey.second}
+            background-color: ${thema.color.grey.second};
             position: absolute;
             transform: translateY(6px);
+            
+            ${props => props.isOpen && css <{ isOpen: boolean }>`
+                transform: rotate(45deg) translateY(0);
+        `}
         }
     }
 `
 
-const MenuPopup = styled.div<{isOpen:boolean}>`
+const MenuPopup = styled.div<{ isOpen: boolean }>`
     position: fixed;
     background-color: ${thema.color.primary};
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 9999999;
+    z-index: 99;
+    display: none;
 
+    ${props => props.isOpen && css <{ isOpen: boolean }>`
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    `}
+    
     & a {
         font-family: "Comfortaa", sans-serif;
         font-weight: 500;
