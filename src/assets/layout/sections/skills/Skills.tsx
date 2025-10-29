@@ -3,6 +3,7 @@ import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
 import {Container} from "../../../../components/Conteiner.styled.tsx";
 import {TitleSection} from "../../../../components/TitleSection.styled.tsx";
+import {thema} from "../../../../styles/Thema.tsx";
 
 
 
@@ -12,7 +13,7 @@ export const Skills = () => {
         <SkillsStyled>
             <Container>
                 <TitleSection>Skills</TitleSection>
-                <FlexWrapper wrap = {'wrap'} justify={'space-around'} align={'center'} content={'space-around'} gap={'94px'} padding={'74px 0 144px 0'}>
+                <FlexWrapper className={'skills-wrapper'} wrap = {'wrap'} justify={'space-around'} align={'center'} content={'space-around'} gap={'94px'} padding={'74px 0 144px 0'}>
                     <Icon iconId={'vsCode'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'JS'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
                     <Icon iconId={'CSS'} width={'120'} height={'120'} viewBox={'0 0 120 120'}/>
@@ -32,5 +33,11 @@ export const Skills = () => {
 };
 
 const SkillsStyled = styled.section`
+    .skills-wrapper {
+        @media ${thema.media.mobile} {
+            padding-top: 50px;
+            padding-bottom: 80px;
+        }
+    }
 `
 

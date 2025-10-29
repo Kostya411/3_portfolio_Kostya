@@ -14,7 +14,8 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         background-color: ${thema.color.light.third};
-        
+        min-width: 375px;
+        overflow-x: hidden;
     }
     
     button {

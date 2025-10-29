@@ -4,6 +4,7 @@ import {Button} from "../../../../components/Button.styled.tsx";
 import {FlexWrapper} from "../../../../components/FlexWrapper.styled.tsx";
 import {Container} from "../../../../components/Conteiner.styled.tsx";
 import {TitleSection} from "../../../../components/TitleSection.styled.tsx";
+import {thema} from "../../../../styles/Thema.tsx";
 
 export const Contact = () => {
     return (
@@ -34,6 +35,9 @@ const ContactContainer = styled.div`
 
     button {
         align-self: flex-end;
+    }
+    @media ${thema.media.mobile} {
+        padding-top: 50px;
     }
 `
 

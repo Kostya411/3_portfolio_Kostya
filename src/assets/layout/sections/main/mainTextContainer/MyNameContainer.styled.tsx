@@ -8,4 +8,8 @@ export const MyNameContainer = styled.h2`
     line-height: 120%;
     color: ${thema.color.grey.third};
     text-align: left;
+
+    @media ${thema.media.tablet}{
+        font-size: 42px;
+    }
 `

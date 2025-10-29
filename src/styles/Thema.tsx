@@ -21,6 +21,8 @@ export const thema = {
     media: {
         tablet: "screen and (max-width: 768px)",
         mobile: "screen and (max-width: 576px)",
+        mainPhoto: "screen and (max-width: 1146px)",
+
 
     },
 }

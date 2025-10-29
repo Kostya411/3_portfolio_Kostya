@@ -3,6 +3,7 @@ import {CardTitle} from "./CardTitle.styled";
 import {CardText} from "./CardText.styled";
 import {CardView} from "./CardButton.styled";
 import styled from "styled-components";
+import {thema} from "../../../../../../styles/Thema.tsx";
 
 type CardSectionPropsType = {
     projectName: string
@@ -33,6 +34,10 @@ const CardSectionStyled = styled.div`
     max-width: 50%;
     max-height: 524px;
     padding: 40px 40px 40px 50px ;
+    @media ${thema.media.tablet} {
+        max-width: 100%;
+        padding: 130px 35px;
+    }
     
     
     

@@ -29,11 +29,11 @@ const ProjectCardStyled = styled.li`
     box-shadow: 0 6px 64px 0 rgba(112, 144, 176, 0.1);
     border-radius: 24px;
     max-width: 992px;
+    @media ${thema.media.tablet} {
+        max-width: 496px;
+    }
 
     
-    
-    
-
     display: flex;
     justify-content: center;
     align-items: center;

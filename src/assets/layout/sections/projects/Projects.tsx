@@ -42,15 +42,16 @@ const ProjectsStyled = styled.div`
                 flex-direction: column-reverse;
             }
         }
-      
+
     }
 
-    
-
-            
-               
-           
-
+    ul {
+        @media ${thema.media.mobile} {
+            padding-top: 50px;
+            padding-bottom: 80px;
+            gap: 50px;
+        }
+    }
 
 `
 

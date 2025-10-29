@@ -15,6 +15,10 @@ export const CardView = styled.a`
     font-size: 18px;
     line-height: 150%;
     color: ${thema.color.grey.second};
+
+    @media ${thema.media.mobile} {
+        max-width: 100%;
+    }
     
 
     &:hover {

@@ -4,18 +4,19 @@ import {PhotoStyled} from "./Photo.styled";
 import styled from "styled-components";
 import {MainTextContainer} from "./mainTextContainer/MainTextContainer.tsx";
 import {Container} from "../../../../components/Conteiner.styled.tsx";
+import {thema} from "../../../../styles/Thema.tsx";
 
 
 export const Main = () => {
     return (
         <MainStyled>
             <Container>
-                <FlexWrapper direction={'row-reverse'} justify={'space-between'} wrap={'wrap'} align={'center'}>
-                    {/*<PhotoWrapper>*/}
-                    {/*    <PhotoMask>*/}
-                    {/*        <PhotoStyled src={`${photo}`} alt="main photo"/>*/}
-                    {/*    </PhotoMask>*/}
-                    {/*</PhotoWrapper>*/}
+                <FlexWrapper className='mainWrappAdapt' direction={'row-reverse'} justify={'space-between'} wrap={'wrap'} align={'center'}>
+                    <PhotoWrapper>
+                        {/*<PhotoMask>*/}
+                            <PhotoStyled src={`${photo}`} alt="main photo"/>
+                        {/*</PhotoMask>*/}
+                    </PhotoWrapper>
                     <MainTextContainer/>
                 </FlexWrapper>
             </Container>
@@ -28,22 +29,26 @@ const MainStyled = styled.section`
     position: relative;
     z-index: -1;
     
-
-
+    .mainWrappAdapt {
+        @media ${thema.media.mainPhoto} {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
 
 `
 
-const PhotoMask = styled.div`
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 777px;
-    height: 877px;
-    mask-image: url('/yellow-bg.svg');
-    mask-position: left bottom;
-    background-image: url('/yellow-bg.svg');
-    background-position: left bottom;
-`
+// const PhotoMask = styled.div`
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 777px;
+//     height: 877px;
+//     mask-image: url('/yellow-bg.svg');
+//     mask-position: left bottom;
+//     background-image: url('/yellow-bg.svg');
+//     background-position: left bottom;
+// `
 
 const PhotoWrapper = styled.div`
     position: relative;
@@ -52,6 +57,11 @@ const PhotoWrapper = styled.div`
     bottom: 0;
     left: 0;
     align-items: center;
+    
+    @media ${thema.media.mainPhoto} {
+        height: 570px;
+    }
+    
 `
 
 

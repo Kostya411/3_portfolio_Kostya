@@ -8,4 +8,5 @@ export const TextContainer = styled.p`
     line-height: 150%;
     color: ${thema.color.grey.first};
     text-align: left;
+   
 `
