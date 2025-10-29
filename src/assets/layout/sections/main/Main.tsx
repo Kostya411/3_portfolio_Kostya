@@ -29,12 +29,12 @@ const MainStyled = styled.section`
     position: relative;
     z-index: -1;
     
-    // .mainWrappAdapt {
-    //     @media ${thema.media.mainPhoto} {
-    //         flex-direction: column;
-    //         align-items: flex-end;
-    //     }
-    // }
+    .mainWrappAdapt {
+        @media ${thema.media.mainPhoto} {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
 
 `
 

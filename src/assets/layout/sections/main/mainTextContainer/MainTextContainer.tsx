@@ -29,10 +29,10 @@ const MainTextContainerStyled = styled.div`
     max-width: 508px;
     margin: 55px 0 254px 0;
     text-align: left;
-    // @media ${thema.media.mainPhoto} {
-    //   align-self: flex-start;
-    //     max-width: 800px;
-    //     margin: 50px 0 90px 0;
-    // }
+    @media ${thema.media.mainPhoto} {
+      align-self: flex-start;
+        max-width: 800px;
+        margin: 50px 0 90px 0;
+    }
     
 `
