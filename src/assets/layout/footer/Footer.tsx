@@ -28,7 +28,7 @@ const FooterStyled = styled.footer`
     text-align: center;
     padding-bottom: 240px;
     padding-top: 40px;
-    background-image: url("/public/footer.svg");
+    background-image: url("./public/footer.svg");
 `
 const Copyright = styled.small`
     font-family: "Nunito", sans-serif;
